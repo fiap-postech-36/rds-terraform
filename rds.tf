@@ -57,6 +57,10 @@ resource "aws_db_subnet_group" "default" {
   tags = {
     Name = "My RDS Subnet Group"
   }
+
+   lifecycle {
+    prevent_destroy = true  # Impede que o Terraform destrua o grupo de sub-redes
+  }
 }
 
 resource "aws_db_instance" "default" {
