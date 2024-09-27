@@ -4,7 +4,6 @@ provider "aws" {
 
 resource "aws_vpc" "default" {
   cidr_block = "10.0.0.0/16"
-  arn        = "arn:aws:iam::013545085409:role/LabRole"
 
   tags = {
     Name = "MyVPC"
@@ -52,7 +51,7 @@ resource "aws_security_group" "default" {
 }
 
 resource "aws_db_subnet_group" "default" {
-  name       = "rds_subnet_group"
+  name       = "subnet_group_rds"
   subnet_ids = [aws_subnet.subnet1.id, aws_subnet.subnet2.id]
 
   tags = {
