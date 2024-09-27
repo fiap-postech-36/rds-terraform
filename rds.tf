@@ -4,6 +4,7 @@ provider "aws" {
 
 resource "aws_vpc" "default" {
   cidr_block = "10.0.0.0/16"
+  arn        = ""arn:aws:iam::013545085409:role/LabRole"
 
   tags = {
     Name = "MyVPC"
