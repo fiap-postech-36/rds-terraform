@@ -23,7 +23,7 @@ jobs:
         run: terraform init -reconfigure
 
       - name: Terraform Destroy
-        run: bash terraform.sh destroy -auto-approve
+        run: bash  destroy -auto-approve
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
