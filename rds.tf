@@ -1,8 +1,5 @@
 provider "aws" {
   region = "us-east-1"
-  assume_role {
-    role_arn = "arn:aws:iam::013545085409:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS"
-  }
 }
 
 resource "aws_vpc" "default" {
