@@ -33,8 +33,5 @@ jobs:
     - name: Terraform Validate
       run: terraform validate
 
-    - name: Terraform Plan
-      run: bash terraform.sh destroy plan
-
-    - name: Terraform Apply
-      run: bash terraform.sh destroy apply
+    - name: Terraform Destroy
+      run: bash terraform destroy
