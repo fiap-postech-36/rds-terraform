@@ -1,4 +1,4 @@
-name: AWS - Cria infraestrutura
+name: AWS - Destroy infraestrutura
 
 on:
   workflow_dispatch:
