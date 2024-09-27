@@ -20,4 +20,6 @@ shift
 PARAMS="$@"
 
 terraform $METHOD $PARAMS \
--var "environment=$ENVIRONMENT"
+-var "db_name=$DB_NAME" \
+-var "db_username=$DB_USERNAME" \
+-var "db_password=$DB_PASSAWORD"
