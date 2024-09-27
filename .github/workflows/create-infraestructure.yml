@@ -42,7 +42,7 @@ jobs:
       run: terraform validate
 
     - name: Terraform Plan
-      run: bash  plan
+      run: bash terraform.sh plan
 
     - name: Terraform Apply
-      run: bash  apply -auto-approve
+      run: bash terraform.sh apply -auto-approve
