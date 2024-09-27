@@ -6,10 +6,12 @@ variable "db_name" {
 variable "db_username" {
   description = "The database admin username"
   type        = string
+  default     = "postgress"
 }
 
 variable "db_password" {
   description = "The database admin password"
   type        = string
   sensitive   = true
+  default     = "postgress"
 }
